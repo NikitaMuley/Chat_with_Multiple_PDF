@@ -8,13 +8,13 @@ from langchain.vectorstores import FAISS
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.chains.question_answering import load_qa_chain
 from langchain.prompts import PromptTemplate
-# from dotenv import load_dotenv
+from dotenv import load_dotenv
 
 
-GOOGLE_API_KEY = "AIzaSyC_Stbp0ESCFtOQm2TKopxXsskFW_oRYac"
-# load_dotenv()
-# os.getenv("GOOGLE_API_KEY")
-genai.configure(api_key="GOOGLE_API_KEY")
+google_api_key = "AIzaSyC_Stbp0ESCFtOQm2TKopxXsskFW_oRYac"
+load_dotenv()
+os.getenv("GOOGLE_API_KEY")
+genai.configure(api_key="google_api_key")
 
 
 
